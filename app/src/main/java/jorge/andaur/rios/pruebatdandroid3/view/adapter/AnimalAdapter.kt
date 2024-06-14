@@ -19,13 +19,13 @@ class AnimalAdapter (private val listaAnimal: List<AnimalEntidad>) :
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): AnimalAdapter.AnimalViewHolder {
+    ): AnimalViewHolder {
         val binding =
             FilaListaAnimalBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return AnimalViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: AnimalAdapter.AnimalViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: AnimalViewHolder, position: Int) {
         val animal = listaAnimal[position]
         holder.binding.txtNombreAnimal.text = animal.nombre
         holder.binding.txtTipo.text = animal.tipo

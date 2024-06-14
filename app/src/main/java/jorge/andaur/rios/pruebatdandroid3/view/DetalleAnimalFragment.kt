@@ -92,6 +92,14 @@ class DetalleAnimalFragment : Fragment() {
             startActivity(Intent.createChooser(intent, "Send Email"))*/
 
 
+            //Configurar el click del boton
+//            binding.mailButton.setOnClickListener {
+//
+//                //Enviar Email
+//                // Configurar el intent para enviar el correo y en el asunto se incluya el nombre del producto
+//                val intent = Intent(Intent.ACTION_SENDTO).apply {
+//                    val uri = Uri.parse("contacto@xxxx.com?subject=Me%20interesa%20el%20producto:%20$nombreEmpresa")
+//                    data = uri  // Especifica el correo y el asunto
         //Enviar Email
         val intent = Intent(Intent.ACTION_SENDTO).apply {
             data =

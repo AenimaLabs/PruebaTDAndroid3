@@ -62,7 +62,6 @@ class MainActivity : AppCompatActivity() {
                         "ID: ${selectedObject.id} Name: ${selectedObject.nombre}",
                         Toast.LENGTH_SHORT
                     ).show()
-
                 }
             }
 

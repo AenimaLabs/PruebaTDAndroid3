@@ -116,7 +116,7 @@ class AnimalViewModel : ViewModel() {
             }
         }
     }
-
+//
 
     /**
      * Funcion que va a a llamar a la segunda API
